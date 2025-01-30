@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2023.1.2 (Build 450U)" ts="2025-01-30 11:47:11">
+<Project name="EnsExportItem_2025-01-30 11-42-36_812+1" LastModified="2025-01-30 11:47:11.1793971">
+  <ProjectDescription>Studio Project generated starting from Production Configuration Item 'AHPuGEDPKG.FoundationProduction : SentrytoVisus_Router' at 2025-01-30 10:42:36.812 UTC</ProjectDescription>
+  <Items>
+    <ProjectItem name="MDM.SentryVisus" type="CLS"></ProjectItem>
+    <ProjectItem name="MDM.inputMDM" type="CLS"></ProjectItem>
+    <ProjectItem name="customMDM.HL7" type="HL7"></ProjectItem>
+    <ProjectItem name="SentryVisus.LUT" type="LUT"></ProjectItem>
+    <ProjectItem name="Settings:HL7.Sentry.Service.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:HL7.Visus.Operation.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:SentrytoVisus_Router.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportItem_2025-01-30 11-42-36_812+1.PTD" type="PTD"></ProjectItem>
+  </Items>
+</Project>
+
+
+<Class name="MDM.SentryVisus">
+<Super>Ens.DataTransformDTL</Super>
+<TimeChanged>67233,58743.966740081</TimeChanged>
+<TimeCreated>67225,29495.124289288</TimeCreated>
+<DependsOn>EnsLib.HL7.Message</DependsOn>
+
+<Parameter name="IGNOREMISSINGSOURCE">
+<Default>1</Default>
+</Parameter>
+
+<Parameter name="REPORTERRORS">
+<Default>0</Default>
+</Parameter>
+
+<Parameter name="TREATEMPTYREPEATINGFIELDASNULL">
+<Default>0</Default>
+</Parameter>
+
+<XData name="DTL">
+<XMLNamespace>http://www.intersystems.com/dtl</XMLNamespace>
+<Data><![CDATA[
+<transform sourceClass='EnsLib.HL7.Message' targetClass='EnsLib.HL7.Message' sourceDocType='customMDM:MDM_T01' targetDocType='customMDM:MDM_T01' create='new' language='objectscript' >
+<assign value='source' property='target' action='set' />
+<foreach property='source.{ORCgrp()}' key='k2' >
+<if condition='..Lookup("SentryVisus",source.{ORCgrp(k2).OBR:UniversalServiceIdentifier.Text}) = ""' >
+<true>
+<assign value='..Lookup("SentryVisus","other")' property='target.{TXA:DocumentType}' action='set' />
+</true>
+<false>
+<assign value='..Lookup("SentryVisus",source.{ORCgrp(k2).OBR:UniversalServiceIdentifier.Text})' property='target.{TXA:DocumentType}' action='set' />
+</false>
+</if>
+</foreach>
+</transform>
+]]></Data>
+</XData>
+</Class>
+
+
+<Class name="MDM.inputMDM">
+<Description>
+</Description>
+<Super>Ens.Rule.Definition</Super>
+<TimeChanged>67235,41826.9476569</TimeChanged>
+<TimeCreated>67191,30330.36887651</TimeCreated>
+
+<Parameter name="RuleAssistClass">
+<Default>EnsLib.HL7.MsgRouter.RuleAssist</Default>
+</Parameter>
+
+<XData name="RuleDefinition">
+<XMLNamespace>http://www.intersystems.com/rule</XMLNamespace>
+<Data><![CDATA[
+<ruleDefinition alias="" context="" production="">
+<ruleSet name="" effectiveBegin="" effectiveEnd="">
+<rule name="" disabled="false">
+<constraint name="source" value="HL7.Sentry.Service.TCP"></constraint>
+<constraint name="docCategory" value=""></constraint>
+<when condition="1" comment="">
+<send transform="MDM.SentryVisus" target="HL7.Visus.Operation.TCP"></send>
+</when>
+</rule>
+</ruleSet>
+</ruleDefinition>
+]]></Data>
+</XData>
+</Class>
+
+
+<Document name="EnsExportNotes.EnsExportItem_2025-01-30 11-42-36_812+1.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportItem_2025-01-30 11-42-36_812+1" description="Export Notes for export EnsExportItem_2025-01-30 11-42-36_812+1">
+<![CDATA[<Deployment>
+<Creation>
+<Machine>ENSTST03.AHP.LOCAL</Machine>
+<Instance>ENSTST</Instance>
+<Namespace>AHP_GED</Namespace>
+<SourceProduction>AHPuGEDPKG.FoundationProduction</SourceProduction>
+<Username>PEDRO-EXTERNE</Username>
+<UTC>2025-01-30 10:47:11.177</UTC>
+</Creation>
+<Notes>
+</Notes>
+<Contents>
+<ExportProject>EnsExportItem_2025-01-30 11-42-36_812+1</ExportProject>
+<Item num="1">MDM.SentryVisus.CLS</Item>
+<Item num="2">MDM.inputMDM.CLS</Item>
+<Item num="3">SentryVisus.LUT</Item>
+<Item num="4">Settings:HL7.Sentry.Service.TCP.PTD</Item>
+<Item num="5">Settings:HL7.Visus.Operation.TCP.PTD</Item>
+<Item num="6">Settings:SentrytoVisus_Router.PTD</Item>
+<Item num="7">customMDM.HL7</Item>
+</Contents>
+<ProductionClassInExport></ProductionClassInExport>
+</Deployment>
+
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="SentryVisus.LUT">
+<lookupTable>
+<entry table="SentryVisus" key=".VO2 MAX CARDIO">40076</entry>
+<entry table="SentryVisus" key=".VO2 MAX CARDIO +">40076</entry>
+<entry table="SentryVisus" key=".VO2 MAX PNEUMO_AVEC GAZ (TRE)">40048</entry>
+<entry table="SentryVisus" key=".VO2 MAX PNEUMO_SANS GAZ">40048</entry>
+<entry table="SentryVisus" key="other">20813</entry>
+</lookupTable>
+</Document>
+
+<Document name="Settings:HL7.Sentry.Service.TCP.PTD"><ProjectTextDocument name="Settings:HL7.Sentry.Service.TCP" description="Settings for HL7.Sentry.Service.TCP in Production AHPuGEDPKG.FoundationProduction">
+<![CDATA[<Item Name="HL7.Sentry.Service.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">SentrytoVisus_Router</Setting><Setting Target="Adapter" Name="Port">40800</Setting><Setting Target="Host" Name="MessageSchemaCategory">customMDM</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:HL7.Visus.Operation.TCP.PTD"><ProjectTextDocument name="Settings:HL7.Visus.Operation.TCP" description="Settings for HL7.Visus.Operation.TCP in Production AHPuGEDPKG.FoundationProduction">
+<![CDATA[<Item Name="HL7.Visus.Operation.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">visus-tst.ahp.local</Setting><Setting Target="Adapter" Name="Port">3385</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:SentrytoVisus_Router.PTD"><ProjectTextDocument name="Settings:SentrytoVisus_Router" description="Settings for SentrytoVisus_Router in Production AHPuGEDPKG.FoundationProduction">
+<![CDATA[<Item Name="SentrytoVisus_Router" Category="" ClassName="EnsLib.HL7.MsgRouter.RoutingEngine" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="BusinessRuleName">MDM.inputMDM</Setting><Setting Target="Host" Name="Validation">dm-z</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="customMDM.HL7">
+<Category name="customMDM" base="2.5">
+
+<MessageType name='MDM_T09' structure='MDM_T01' returntype='base:ACK_T01' description='Medical document management - Original document notification'/>
+
+<MessageStructure name='MDM_T01' definition='base:MSH~[~{~base:SFT~}~]~base:EVN~base:PID~base:PV1~base:IN1~[~{~[~base:ORC~]~[~{~[~base:TQ1~]~[~{~base:TQ2~}~]~}~]~[~base:OBR~]~[~{~base:NTE~}~]~}~]~[~{~base:TXA~}~]' description='Medical document management - Original document notification'/>
+
+</Category>
+</Document></Export>
