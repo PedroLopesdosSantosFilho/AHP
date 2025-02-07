@@ -1,0 +1,291 @@
+<html>
+<head>
+<title> TransXplore </title>
+</head>
+
+<body bgcolor=lightgreen onload=#server(..DATEH())#>
+<form name="TransXplore2" method="post" action="">
+
+<span id="C1" style="position:absolute; z-index: 3; left:60px; top:20px;">IRM 1</span>
+<span id="C2" style="position:absolute; z-index: 3; left:180px; top:20px;">IRM 2</span>
+<span id="C7" style="position:absolute; z-index: 3; left:300px; top:20px;">IRM T1</span>
+
+<span id="T1" style="position:absolute; z-index: 3; left:10px; top:40px;">FTI</span>
+<input type="text" name="FTI1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:40px;">
+<input type="text" name="FTI2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:40px;">
+<input type="text" name="FTI3" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:40px;">
+<span id="T2" style="position:absolute; z-index: 3; left:10px; top:62px;">FTRI1</span>
+<input type="text" name="FTRI11" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:62px;">
+<input type="text" name="FTRI12" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:62px;">
+<input type="text" name="FTRI13" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:62px;">
+<span id="T3" style="position:absolute; z-index: 3; left:10px; top:84px;">FTRI2</span>
+<input type="text" name="FTRI21" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:84px;">
+<input type="text" name="FTRI22" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:84px;">
+<input type="text" name="FTRI23" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:84px;">
+<span id="T4" style="position:absolute; z-index: 3; left:10px; top:106px;">FTRI3</span>
+<input type="text" name="FTRI31" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:106px;">
+<input type="text" name="FTRI32" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:106px;">
+<input type="text" name="FTRI33" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:106px;">
+<span id="T5" style="position:absolute; z-index: 3; left:10px; top:128px;">FTV</span>
+<input type="text" name="FTV1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:128px;">
+<input type="text" name="FTV2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:128px;">
+<input type="text" name="FTV3" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:128px;">
+<span id="T6" style="position:absolute; z-index: 3; left:10px; top:150px;">FTVG</span>
+<input type="text" name="FTVG1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:150px;">
+<input type="text" name="FTVG2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:150px;">
+<input type="text" name="FTVG3" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:150px;">
+<span id="T7" style="position:absolute; z-index: 3; left:10px; top:172px;">FTVN</span>
+<input type="text" name="FTVN1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:172px;">
+<input type="text" name="FTVN2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:172px;">
+<input type="text" name="FTVN3" value="" size=10 style="position:absolute; z-index: 3; left:300px; top:172px;">
+
+<span id="C3" style="position:absolute; z-index: 3; left:60px; top:210px;">SCANNER 1</span>
+<span id="C4" style="position:absolute; z-index: 3; left:180px; top:210px;">SCANNER 3</span>
+
+<span id="T8" style="position:absolute; z-index: 3; left:10px; top:230px;">FTS</span>
+<input type="text" name="FTS1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:230px;">
+<input type="text" name="FTS2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:230px;">
+<span id="T9" style="position:absolute; z-index: 3; left:10px; top:252px;">FTRS1</span>
+<input type="text" name="FTRS11" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:252px;">
+<input type="text" name="FTRS12" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:252px;">
+<span id="T10" style="position:absolute; z-index: 3; left:10px; top:274px;">FTRS2</span>
+<input type="text" name="FTRS21" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:274px;">
+<input type="text" name="FTRS22" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:274px;">
+<span id="T11" style="position:absolute; z-index: 3; left:10px; top:296px;">FTRS3</span>
+<input type="text" name="FTRS31" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:296px;">
+<input type="text" name="FTRS32" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:296px;">
+<span id="T12" style="position:absolute; z-index: 3; left:10px; top:318px;">FTU</span>
+<input type="text" name="FTU1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:318px;">
+<input type="text" name="FTU2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:318px;">
+<span id="T13" style="position:absolute; z-index: 3; left:10px; top:340px;">FTW</span>
+<input type="text" name="FTW1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:340px;">
+<input type="text" name="FTW2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:340px;">
+<span id="T14" style="position:absolute; z-index: 3; left:10px; top:362px;">FTWG</span>
+<input type="text" name="FTWG1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:362px;">
+<input type="text" name="FTWG2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:362px;">
+<span id="T15" style="position:absolute; z-index: 3; left:10px; top:384px;">FTUE</span>
+<input type="text" name="FTUE1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:384px;">
+<input type="text" name="FTUE2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:384px;">
+<span id="T16" style="position:absolute; z-index: 3; left:10px; top:406px;">FTUG</span>
+<input type="text" name="FTUG1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:406px;">
+<input type="text" name="FTUG2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:406px;">
+<span id="T17" style="position:absolute; z-index: 3; left:10px; top:428px;">FTUN</span>
+<input type="text" name="FTUN1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:428px;">
+<input type="text" name="FTUN2" value="" size=10 style="position:absolute; z-index: 3; left:180px; top:428px;">
+
+
+<span id="C5" style="position:absolute; z-index: 3; left:60px; top:466px;">PETSCANNER 2</span>
+
+<span id="T18" style="position:absolute; z-index: 3; left:10px; top:486px;">FTP</span>
+<input type="text" name="FTP" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:486px;">
+<span id="T19" style="position:absolute; z-index: 3; left:10px; top:508px;">FTRP1</span>
+<input type="text" name="FTRP1" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:508px;">
+<span id="T20" style="position:absolute; z-index: 3; left:10px; top:530px;">FTX</span>
+<input type="text" name="FTX" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:530px;">
+<span id="T21" style="position:absolute; z-index: 3; left:10px; top:552px;">FTXG</span>
+<input type="text" name="FTXG" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:552px;">
+<span id="T22" style="position:absolute; z-index: 3; left:10px; top:574px;">FTXN</span>
+<input type="text" name="FTXN" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:574px;">
+<span id="T23" style="position:absolute; z-index: 3; left:10px; top:596px;">FTXS</span>
+<input type="text" name="FTXS" value="" size=10 style="position:absolute; z-index: 3; left:60px; top:596px;">
+
+<span id="C6" style="position:absolute; z-index: 3; left:280px; top:466px;">PETSCANNER 2_2</span>
+
+<span id="T18" style="position:absolute; z-index: 3; left:210px; top:486px;">FTP_2</span>
+<input type="text" name="FTP2" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:486px;">
+<span id="T19" style="position:absolute; z-index: 3; left:210px; top:508px;">FTRP1_2</span>
+<input type="text" name="FTRP12" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:508px;">
+<span id="T20" style="position:absolute; z-index: 3; left:210px; top:530px;">FTX_2</span>
+<input type="text" name="FTX2" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:530px;">
+<span id="T21" style="position:absolute; z-index: 3; left:210px; top:552px;">FTXG_2</span>
+<input type="text" name="FTXG2" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:552px;">
+<span id="T22" style="position:absolute; z-index: 3; left:210px; top:574px;">FTXN_2</span>
+<input type="text" name="FTXN2" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:574px;">
+<span id="T23" style="position:absolute; z-index: 3; left:210px; top:596px;">FTXS_2</span>
+<input type="text" name="FTXS2" value="" size=10 style="position:absolute; z-index: 3; left:280px; top:596px;">
+
+
+<input type="button" value="Enregistrer dans l'année en cours" style="position:absolute; z-index: 3; left:60px; top:650px; border-radius: 8px; color: red; background-color: white" onclick="salvax()">
+<input type="button" value="Enregistrer pour l'année prochaine" style="position:absolute; z-index: 3; left:660px; top:650px; border-radius: 8px; color: blue; background-color: white" onclick="salvax2()">
+
+<span id="xC1" style="position:absolute; z-index: 3; left:660px; top:20px;">IRM 1</span>
+<span id="xC2" style="position:absolute; z-index: 3; left:780px; top:20px;">IRM 2</span>
+<span id="xC7" style="position:absolute; z-index: 3; left:900px; top:20px;">IRM T1</span>
+
+<span id="xT1" style="position:absolute; z-index: 3; left:610px; top:40px;">FTI</span>
+<input type="text" name="xFTI1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:40px;">
+<input type="text" name="xFTI2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:40px;">
+<input type="text" name="xFTI3" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:40px;">
+<span id="xT2" style="position:absolute; z-index: 3; left:610px; top:62px;">FTRI1</span>
+<input type="text" name="xFTRI11" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:62px;">
+<input type="text" name="xFTRI12" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:62px;">
+<input type="text" name="xFTRI13" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:62px;">
+<span id="xT3" style="position:absolute; z-index: 3; left:610px; top:84px;">FTRI2</span>
+<input type="text" name="xFTRI21" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:84px;">
+<input type="text" name="xFTRI22" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:84px;">
+<input type="text" name="xFTRI23" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:84px;">
+<span id="xT4" style="position:absolute; z-index: 3; left:610px; top:106px;">FTRI3</span>
+<input type="text" name="xFTRI31" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:106px;">
+<input type="text" name="xFTRI32" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:106px;">
+<input type="text" name="xFTRI33" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:106px;">
+<span id="xT5" style="position:absolute; z-index: 3; left:610px; top:128px;">FTV</span>
+<input type="text" name="xFTV1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:128px;">
+<input type="text" name="xFTV2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:128px;">
+<input type="text" name="xFTV3" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:128px;">
+<span id="xT6" style="position:absolute; z-index: 3; left:610px; top:150px;">FTVG</span>
+<input type="text" name="xFTVG1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:150px;">
+<input type="text" name="xFTVG2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:150px;">
+<input type="text" name="xFTVG3" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:150px;">
+<span id="xT7" style="position:absolute; z-index: 3; left:610px; top:172px;">FTVN</span>
+<input type="text" name="xFTVN1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:172px;">
+<input type="text" name="xFTVN2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:172px;">
+<input type="text" name="xFTVN3" value="" size=10 style="position:absolute; z-index: 3; left:900px; top:172px;">
+
+<span id="xC3" style="position:absolute; z-index: 3; left:660px; top:210px;">SCANNER 1</span>
+<span id="xC4" style="position:absolute; z-index: 3; left:780px; top:210px;">SCANNER 3</span>
+
+<span id="xT8" style="position:absolute; z-index: 3; left:610px; top:230px;">FTS</span>
+<input type="text" name="xFTS1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:230px;">
+<input type="text" name="xFTS2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:230px;">
+<span id="xT9" style="position:absolute; z-index: 3; left:610px; top:252px;">FTRS1</span>
+<input type="text" name="xFTRS11" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:252px;">
+<input type="text" name="xFTRS12" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:252px;">
+<span id="xT10" style="position:absolute; z-index: 3; left:610px; top:274px;">FTRS2</span>
+<input type="text" name="xFTRS21" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:274px;">
+<input type="text" name="xFTRS22" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:274px;">
+<span id="xT11" style="position:absolute; z-index: 3; left:610px; top:296px;">FTRS3</span>
+<input type="text" name="xFTRS31" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:296px;">
+<input type="text" name="xFTRS32" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:296px;">
+<span id="xT12" style="position:absolute; z-index: 3; left:610px; top:318px;">FTU</span>
+<input type="text" name="xFTU1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:318px;">
+<input type="text" name="xFTU2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:318px;">
+<span id="xT13" style="position:absolute; z-index: 3; left:610px; top:340px;">FTW</span>
+<input type="text" name="xFTW1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:340px;">
+<input type="text" name="xFTW2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:340px;">
+<span id="xT14" style="position:absolute; z-index: 3; left:610px; top:362px;">FTWG</span>
+<input type="text" name="xFTWG1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:362px;">
+<input type="text" name="xFTWG2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:362px;">
+<span id="xT15" style="position:absolute; z-index: 3; left:610px; top:384px;">FTUE</span>
+<input type="text" name="xFTUE1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:384px;">
+<input type="text" name="xFTUE2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:384px;">
+<span id="xT16" style="position:absolute; z-index: 3; left:610px; top:406px;">FTUG</span>
+<input type="text" name="xFTUG1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:406px;">
+<input type="text" name="xFTUG2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:406px;">
+<span id="xT17" style="position:absolute; z-index: 3; left:610px; top:428px;">FTUN</span>
+<input type="text" name="xFTUN1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:428px;">
+<input type="text" name="xFTUN2" value="" size=10 style="position:absolute; z-index: 3; left:780px; top:428px;">
+
+
+<span id="xC5" style="position:absolute; z-index: 3; left:660px; top:466px;">PETSCANNER 2</span>
+
+<span id="xT18" style="position:absolute; z-index: 3; left:610px; top:486px;">FTP</span>
+<input type="text" name="xFTP" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:486px;">
+<span id="xT19" style="position:absolute; z-index: 3; left:610px; top:508px;">FTRP1</span>
+<input type="text" name="xFTRP1" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:508px;">
+<span id="xT20" style="position:absolute; z-index: 3; left:610px; top:530px;">FTX</span>
+<input type="text" name="xFTX" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:530px;">
+<span id="xT21" style="position:absolute; z-index: 3; left:610px; top:552px;">FTXG</span>
+<input type="text" name="xFTXG" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:552px;">
+<span id="xT22" style="position:absolute; z-index: 3; left:610px; top:574px;">FTXN</span>
+<input type="text" name="xFTXN" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:574px;">
+<span id="xT23" style="position:absolute; z-index: 3; left:610px; top:596px;">FTXS</span>
+<input type="text" name="xFTXS" value="" size=10 style="position:absolute; z-index: 3; left:660px; top:596px;">
+
+<span id="xC6" style="position:absolute; z-index: 3; left:880px; top:466px;">PETSCANNER 2_2</span>
+
+<span id="xT18" style="position:absolute; z-index: 3; left:810px; top:486px;">FTP_2</span>
+<input type="text" name="xFTP2" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:486px;">
+<span id="xT19" style="position:absolute; z-index: 3; left:810px; top:508px;">FTRP1_2</span>
+<input type="text" name="xFTRP12" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:508px;">
+<span id="xT20" style="position:absolute; z-index: 3; left:810px; top:530px;">FTX_2</span>
+<input type="text" name="xFTX2" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:530px;">
+<span id="xT21" style="position:absolute; z-index: 3; left:810px; top:552px;">FTXG_2</span>
+<input type="text" name="xFTXG2" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:552px;">
+<span id="xT22" style="position:absolute; z-index: 3; left:810px; top:574px;">FTXN_2</span>
+<input type="text" name="xFTXN2" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:574px;">
+<span id="xT23" style="position:absolute; z-index: 3; left:810px; top:596px;">FTXS_2</span>
+<input type="text" name="xFTXS2" value="" size=10 style="position:absolute; z-index: 3; left:880px; top:596px;">
+
+<script type='text/javascript'>
+function salvax() {
+var info1=document.TransXplore2.FTI1.value+'^'+document.TransXplore2.FTRI11.value+'^'+document.TransXplore2.FTRI21.value+'^'+document.TransXplore2.FTRI31.value+'^'+document.TransXplore2.FTV1.value+'^'+document.TransXplore2.FTVG1.value+'^'+document.TransXplore2.FTVN1.value;
+var info2=document.TransXplore2.FTI2.value+'^'+document.TransXplore2.FTRI12.value+'^'+document.TransXplore2.FTRI22.value+'^'+document.TransXplore2.FTRI32.value+'^'+document.TransXplore2.FTV2.value+'^'+document.TransXplore2.FTVG2.value+'^'+document.TransXplore2.FTVN2.value;
+var info7=document.TransXplore2.FTI3.value+'^'+document.TransXplore2.FTRI13.value+'^'+document.TransXplore2.FTRI23.value+'^'+document.TransXplore2.FTRI33.value+'^'+document.TransXplore2.FTV3.value+'^'+document.TransXplore2.FTVG3.value+'^'+document.TransXplore2.FTVN3.value;
+
+var info3=document.TransXplore2.FTS1.value+'^'+document.TransXplore2.FTRS11.value+'^'+document.TransXplore2.FTRS21.value+'^'+document.TransXplore2.FTRS31.value+'^'+document.TransXplore2.FTU1.value+'^'+document.TransXplore2.FTW1.value+'^'+document.TransXplore2.FTWG1.value+'^'+document.TransXplore2.FTUE1.value+'^'+document.TransXplore2.FTUG1.value+'^'+document.TransXplore2.FTUN1.value;
+var info4=document.TransXplore2.FTS2.value+'^'+document.TransXplore2.FTRS21.value+'^'+document.TransXplore2.FTRS22.value+'^'+document.TransXplore2.FTRS32.value+'^'+document.TransXplore2.FTU2.value+'^'+document.TransXplore2.FTW2.value+'^'+document.TransXplore2.FTWG2.value+'^'+document.TransXplore2.FTUE2.value+'^'+document.TransXplore2.FTUG2.value+'^'+document.TransXplore2.FTUN2.value;
+var info5=document.TransXplore2.FTP.value+'^'+document.TransXplore2.FTRP1.value+'^'+document.TransXplore2.FTX.value+'^'+document.TransXplore2.FTXG.value+'^'+document.TransXplore2.FTXN.value+'^'+document.TransXplore2.FTXS.value;
+var info6=document.TransXplore2.FTP2.value+'^'+document.TransXplore2.FTRP12.value+'^'+document.TransXplore2.FTX2.value+'^'+document.TransXplore2.FTXG2.value+'^'+document.TransXplore2.FTXN2.value+'^'+document.TransXplore2.FTXS2.value;
+#server(..salvara(info1,info2,info3,info4,info5,info6,info7))#
+return false; }
+</script>
+
+<script type='text/javascript'>
+function salvax2() {
+var xinfo1=document.TransXplore2.xFTI1.value+'^'+document.TransXplore2.xFTRI11.value+'^'+document.TransXplore2.xFTRI21.value+'^'+document.TransXplore2.xFTRI31.value+'^'+document.TransXplore2.xFTV1.value+'^'+document.TransXplore2.xFTVG1.value+'^'+document.TransXplore2.xFTVN1.value;
+var xinfo2=document.TransXplore2.xFTI2.value+'^'+document.TransXplore2.xFTRI12.value+'^'+document.TransXplore2.xFTRI22.value+'^'+document.TransXplore2.xFTRI32.value+'^'+document.TransXplore2.xFTV2.value+'^'+document.TransXplore2.xFTVG2.value+'^'+document.TransXplore2.xFTVN2.value;
+var xinfo7=document.TransXplore2.xFTI3.value+'^'+document.TransXplore2.xFTRI13.value+'^'+document.TransXplore2.xFTRI23.value+'^'+document.TransXplore2.xFTRI33.value+'^'+document.TransXplore2.xFTV3.value+'^'+document.TransXplore2.xFTVG3.value+'^'+document.TransXplore2.xFTVN3.value;
+
+var xinfo3=document.TransXplore2.xFTS1.value+'^'+document.TransXplore2.xFTRS11.value+'^'+document.TransXplore2.xFTRS21.value+'^'+document.TransXplore2.xFTRS31.value+'^'+document.TransXplore2.xFTU1.value+'^'+document.TransXplore2.xFTW1.value+'^'+document.TransXplore2.xFTWG1.value+'^'+document.TransXplore2.xFTUE1.value+'^'+document.TransXplore2.xFTUG1.value+'^'+document.TransXplore2.xFTUN1.value;
+var xinfo4=document.TransXplore2.xFTS2.value+'^'+document.TransXplore2.xFTRS21.value+'^'+document.TransXplore2.xFTRS22.value+'^'+document.TransXplore2.xFTRS32.value+'^'+document.TransXplore2.xFTU2.value+'^'+document.TransXplore2.xFTW2.value+'^'+document.TransXplore2.xFTWG2.value+'^'+document.TransXplore2.xFTUE2.value+'^'+document.TransXplore2.xFTUG2.value+'^'+document.TransXplore2.xFTUN2.value;
+var xinfo5=document.TransXplore2.xFTP.value+'^'+document.TransXplore2.xFTRP1.value+'^'+document.TransXplore2.xFTX.value+'^'+document.TransXplore2.xFTXG.value+'^'+document.TransXplore2.xFTXN.value+'^'+document.TransXplore2.xFTXS.value;
+var xinfo6=document.TransXplore2.xFTP2.value+'^'+document.TransXplore2.xFTRP12.value+'^'+document.TransXplore2.xFTX2.value+'^'+document.TransXplore2.xFTXG2.value+'^'+document.TransXplore2.xFTXN2.value+'^'+document.TransXplore2.xFTXS2.value;
+#server(..salvara2(xinfo1,xinfo2,xinfo3,xinfo4,xinfo5,xinfo6,xinfo7))#
+return false; }
+</script>
+
+
+<script language=cache method="DATEH" arguments="">
+I '$D(^TransXplore($ZD($H,3)+1)) M ^TransXplore($ZD($H,3)+1)=^TransXplore($ZD($H,3)+0)
+S ANOa=$ZD($H,3)+0,ANOp=ANOa-1
+S ANO=ANOa I '$D(^TransXplore(ANOa)) S ANO=ANOp
+S MAQ="1690" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET_"1" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="IRM 2" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET_"2" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="IRM T1" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET_"3" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="92011502012018" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET_"1" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="92011502012022" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET_"2" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="PETSCANNER 2" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=LET &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="PETSCANNER 2_2" S LET="" F  S LET=$O(^TransXplore(ANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN=$P(LET,"_",1)_$P(LET,"_",2) &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+;
+;
+S proxANO=($ZD($H,3)+1)
+S MAQ="1690" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET_"1" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="IRM 2" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET_"2" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="IRM T1" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET_"3" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="92011502012018" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET_"1" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="92011502012022" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET_"2" &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="PETSCANNER 2" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_LET &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+S MAQ="PETSCANNER 2_2" S LET="" F  S LET=$O(^TransXplore(proxANO,MAQ,LET)) Q:LET=""  s V=^(LET),LN="x"_$P(LET,"_",1)_$P(LET,"_",2) &html<document.TransXplore2.#(LN)#.value=('#(V)#');>
+</script>
+
+</form>
+</body>
+
+<script language=cache method="salvara" arguments="%INFO1,%INFO2,%INFO3,%INFO4,%INFO5,%INFO6,%INFO7">
+K PIECE
+F I=1:1:$L(%INFO1,"^") S PIECE("1690",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO1,"^",I)
+F I=1:1:$L(%INFO2,"^") S PIECE("IRM 2",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO2,"^",I)
+F I=1:1:$L(%INFO7,"^") S PIECE("IRM T1",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO7,"^",I)
+F I=1:1:$L(%INFO3,"^") S PIECE("92011502012018",$P("FTS^FTRS1^FTRS2^FTRS3^FTU^FTW^FTWG^FTUE^FTUG^FTUN","^",I))=$P(%INFO3,"^",I)
+F I=1:1:$L(%INFO4,"^") S PIECE("92011502012022",$P("FTS^FTRS1^FTRS2^FTRS3^FTU^FTW^FTWG^FTUE^FTUG^FTUN","^",I))=$P(%INFO4,"^",I)
+F I=1:1:$L(%INFO5,"^") S PIECE("PETSCANNER 2",$P("FTP^FTRP1^FTX^FTXG^FTXN^FTXS","^",I))=$P(%INFO5,"^",I)
+F I=1:1:$L(%INFO6,"^") S PIECE("PETSCANNER 2_2",$P("FTP_2^FTRP1_2^FTX_2^FTXG_2^FTXN_2^FTXS_2","^",I))=$P(%INFO6,"^",I)
+M ^TransXplore($ZD($H,3)+0)=PIECE S ^TransXplore($ZD($H,3)+0)=$USERNAME
+s retour="Année "_($ZD($H,3)+0)_" mis à jour!"
+&html<alert ('#(retour)#');>
+</script>
+
+<script language=cache method="salvara2" arguments="%INFO1,%INFO2,%INFO3,%INFO4,%INFO5,%INFO6,%INFO7">
+K PIECE
+F I=1:1:$L(%INFO1,"^") S PIECE("1690",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO1,"^",I)
+F I=1:1:$L(%INFO2,"^") S PIECE("IRM 2",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO2,"^",I)
+F I=1:1:$L(%INFO7,"^") S PIECE("IRM T1",$P("FTI^FTRI1^FTRI2^FTRI3^FTV^FTVG^FTVN","^",I))=$P(%INFO7,"^",I)
+F I=1:1:$L(%INFO3,"^") S PIECE("92011502012018",$P("FTS^FTRS1^FTRS2^FTRS3^FTU^FTW^FTWG^FTUE^FTUG^FTUN","^",I))=$P(%INFO3,"^",I)
+F I=1:1:$L(%INFO4,"^") S PIECE("92011502012022",$P("FTS^FTRS1^FTRS2^FTRS3^FTU^FTW^FTWG^FTUE^FTUG^FTUN","^",I))=$P(%INFO4,"^",I)
+F I=1:1:$L(%INFO5,"^") S PIECE("PETSCANNER 2",$P("FTP^FTRP1^FTX^FTXG^FTXN^FTXS","^",I))=$P(%INFO5,"^",I)
+F I=1:1:$L(%INFO6,"^") S PIECE("PETSCANNER 2_2",$P("FTP_2^FTRP1_2^FTX_2^FTXG_2^FTXN_2^FTXS_2","^",I))=$P(%INFO6,"^",I)
+M ^TransXplore($ZD($H,3)+1)=PIECE S ^TransXplore($ZD($H,3)+1)=$USERNAME
+s retour="Année "_($ZD($H,3)+1)_" mis à jour!"
+&html<alert ('#(retour)#');>
+</script>
+</html>
