@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2024.3 (Build 217U)" ts="2025-02-10 09:03:43">
+<Class name="Cardio.CVi42.Natus">
+<Description>
+</Description>
+<Super>Ens.Rule.Definition</Super>
+<TimeChanged>67240,65211.466618503</TimeChanged>
+<TimeCreated>67240,60345.312306431</TimeCreated>
+
+<Parameter name="RuleAssistClass">
+<Default>EnsLib.HL7.MsgRouter.RuleAssist</Default>
+</Parameter>
+
+<XData name="RuleDefinition">
+<XMLNamespace>http://www.intersystems.com/rule</XMLNamespace>
+<Data><![CDATA[
+<ruleDefinition alias="" context="EnsLib.HL7.MsgRouter.RoutingEngine" production="TESTPEDROPKG.FoundationProduction">
+<ruleSet name="" effectiveBegin="" effectiveEnd="">
+<rule name="">
+<constraint name="source" value="CARDIOSOFT.ORU.CARDIOSOFT.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",CARDIOSOFT.ORU.VISUS.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="CVi42.ORU.XPLORE.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",CVi42.ORM.CVi42.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="CVi42.ORU.CVi42.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",CVi42.ORU.XPLORE.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="NATUS.EEG.ORM.XPLORE.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",NATUS.EEG.ORM.NATUS.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="NATUS.EEG.ORU.NATUS.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",NATUS.EEG.ORU.VISUS.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="NATUS.EMG.ORM.XPLORE.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",NATUS.EMG.ORM.NATUS.TCP"></send>
+</when>
+</rule>
+<rule name="" disabled="false">
+<constraint name="source" value="NATUS.EMG.ORU.NATUS.TCP"></constraint>
+<when condition="1" comment="">
+<send transform="" target=",NATUS.EMG.ORU.VISUS.TCP"></send>
+</when>
+</rule>
+</ruleSet>
+</ruleDefinition>
+]]></Data>
+</XData>
+</Class>
+
+
+<Project name="EnsExportItem_2025-02-10 08-52-53_955+1" LastModified="2025-02-10 09:03:43.413592971">
+  <ProjectDescription>Studio Project generated starting from Production Configuration Item 'TESTPEDROPKG.FoundationProduction : Cardio.CVi42.Natus_Router' at 2025-02-10 07:52:53.955 UTC</ProjectDescription>
+  <Items>
+    <ProjectItem name="Cardio.CVi42.Natus" type="CLS"></ProjectItem>
+    <ProjectItem name="Settings:CARDIOSOFT.ORU.CARDIOSOFT.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CARDIOSOFT.ORU.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CARDIOSOFT.ORU.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CARDIOSOFT.ORU.VISUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORM.CVi42.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORM.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORM.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORM.XPLORE.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORU.CVi42.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORU.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORU.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:CVi42.ORU.XPLORE.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:Cardio.CVi42.Natus_Router.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORM.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORM.NATUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORM.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORM.XPLORE.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORU.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORU.NATUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORU.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EEG.ORU.VISUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORM.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORM.NATUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORM.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORM.XPLORE.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORU.FILE.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORU.NATUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORU.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="Settings:NATUS.EMG.ORU.VISUS.TCP.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportItem_2025-02-10 08-52-53_955+1.PTD" type="PTD"></ProjectItem>
+  </Items>
+</Project>
+
+
+<Document name="EnsExportNotes.EnsExportItem_2025-02-10 08-52-53_955+1.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportItem_2025-02-10 08-52-53_955+1" description="Export Notes for export EnsExportItem_2025-02-10 08-52-53_955+1">
+<![CDATA[<Deployment>
+<Creation>
+<Machine>39E17C2E3F45</Machine>
+<Instance>IRIS</Instance>
+<Namespace>TESTPEDRO</Namespace>
+<SourceProduction>TESTPEDROPKG.FoundationProduction</SourceProduction>
+<Username>PedroLO_IRIS</Username>
+<UTC>2025-02-10 08:03:43.406</UTC>
+</Creation>
+<Notes>
+</Notes>
+<Contents>
+<ExportProject>EnsExportItem_2025-02-10 08-52-53_955+1</ExportProject>
+<Item num="1">Cardio.CVi42.Natus.CLS</Item>
+<Item num="2">Settings:CARDIOSOFT.ORU.CARDIOSOFT.TCP.PTD</Item>
+<Item num="3">Settings:CARDIOSOFT.ORU.FILE.PTD</Item>
+<Item num="4">Settings:CARDIOSOFT.ORU.TCP.PTD</Item>
+<Item num="5">Settings:CARDIOSOFT.ORU.VISUS.TCP.PTD</Item>
+<Item num="6">Settings:CVi42.ORM.CVi42.TCP.PTD</Item>
+<Item num="7">Settings:CVi42.ORM.FILE.PTD</Item>
+<Item num="8">Settings:CVi42.ORM.TCP.PTD</Item>
+<Item num="9">Settings:CVi42.ORM.XPLORE.TCP.PTD</Item>
+<Item num="10">Settings:CVi42.ORU.CVi42.TCP.PTD</Item>
+<Item num="11">Settings:CVi42.ORU.FILE.PTD</Item>
+<Item num="12">Settings:CVi42.ORU.TCP.PTD</Item>
+<Item num="13">Settings:CVi42.ORU.XPLORE.TCP.PTD</Item>
+<Item num="14">Settings:Cardio.CVi42.Natus_Router.PTD</Item>
+<Item num="15">Settings:NATUS.EEG.ORM.FILE.PTD</Item>
+<Item num="16">Settings:NATUS.EEG.ORM.NATUS.TCP.PTD</Item>
+<Item num="17">Settings:NATUS.EEG.ORM.TCP.PTD</Item>
+<Item num="18">Settings:NATUS.EEG.ORM.XPLORE.TCP.PTD</Item>
+<Item num="19">Settings:NATUS.EEG.ORU.FILE.PTD</Item>
+<Item num="20">Settings:NATUS.EEG.ORU.NATUS.TCP.PTD</Item>
+<Item num="21">Settings:NATUS.EEG.ORU.TCP.PTD</Item>
+<Item num="22">Settings:NATUS.EEG.ORU.VISUS.TCP.PTD</Item>
+<Item num="23">Settings:NATUS.EMG.ORM.FILE.PTD</Item>
+<Item num="24">Settings:NATUS.EMG.ORM.NATUS.TCP.PTD</Item>
+<Item num="25">Settings:NATUS.EMG.ORM.TCP.PTD</Item>
+<Item num="26">Settings:NATUS.EMG.ORM.XPLORE.TCP.PTD</Item>
+<Item num="27">Settings:NATUS.EMG.ORU.FILE.PTD</Item>
+<Item num="28">Settings:NATUS.EMG.ORU.NATUS.TCP.PTD</Item>
+<Item num="29">Settings:NATUS.EMG.ORU.TCP.PTD</Item>
+<Item num="30">Settings:NATUS.EMG.ORU.VISUS.TCP.PTD</Item>
+</Contents>
+<ProductionClassInExport></ProductionClassInExport>
+</Deployment>
+
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CARDIOSOFT.ORU.CARDIOSOFT.TCP.PTD"><ProjectTextDocument name="Settings:CARDIOSOFT.ORU.CARDIOSOFT.TCP" description="Settings for CARDIOSOFT.ORU.CARDIOSOFT.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CARDIOSOFT.ORU.CARDIOSOFT.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CARDIOSOFT.ORU.FILE.PTD"><ProjectTextDocument name="Settings:CARDIOSOFT.ORU.FILE" description="Settings for CARDIOSOFT.ORU.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CARDIOSOFT.ORU.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\CARDIOSOFT_ORU.files\</Setting><Setting Target="Host" Name="TargetConfigNames">CARDIOSOFT.ORU.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CARDIOSOFT.ORU.TCP.PTD"><ProjectTextDocument name="Settings:CARDIOSOFT.ORU.TCP" description="Settings for CARDIOSOFT.ORU.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CARDIOSOFT.ORU.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CARDIOSOFT.ORU.VISUS.TCP.PTD"><ProjectTextDocument name="Settings:CARDIOSOFT.ORU.VISUS.TCP" description="Settings for CARDIOSOFT.ORU.VISUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CARDIOSOFT.ORU.VISUS.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORM.CVi42.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORM.CVi42.TCP" description="Settings for CVi42.ORM.CVi42.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORM.CVi42.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORM.FILE.PTD"><ProjectTextDocument name="Settings:CVi42.ORM.FILE" description="Settings for CVi42.ORM.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORM.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\CVi42_ORM.files\</Setting><Setting Target="Host" Name="TargetConfigNames">CVi42.ORM.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORM.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORM.TCP" description="Settings for CVi42.ORM.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORM.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORM.XPLORE.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORM.XPLORE.TCP" description="Settings for CVi42.ORM.XPLORE.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORM.XPLORE.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORU.CVi42.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORU.CVi42.TCP" description="Settings for CVi42.ORU.CVi42.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORU.CVi42.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORU.FILE.PTD"><ProjectTextDocument name="Settings:CVi42.ORU.FILE" description="Settings for CVi42.ORU.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORU.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\CVi42_ORU.files\</Setting><Setting Target="Host" Name="TargetConfigNames">CVi42.ORU.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORU.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORU.TCP" description="Settings for CVi42.ORU.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORU.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:CVi42.ORU.XPLORE.TCP.PTD"><ProjectTextDocument name="Settings:CVi42.ORU.XPLORE.TCP" description="Settings for CVi42.ORU.XPLORE.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="CVi42.ORU.XPLORE.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:Cardio.CVi42.Natus_Router.PTD"><ProjectTextDocument name="Settings:Cardio.CVi42.Natus_Router" description="Settings for Cardio.CVi42.Natus_Router in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="Cardio.CVi42.Natus_Router" Category="" ClassName="EnsLib.HL7.MsgRouter.RoutingEngine" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="BusinessRuleName">Cardio.CVi42.Natus</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORM.FILE.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORM.FILE" description="Settings for NATUS.EEG.ORM.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORM.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\NATUS_EEG_ORM.files\</Setting><Setting Target="Host" Name="TargetConfigNames">NATUS.EEG.ORM.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORM.NATUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORM.NATUS.TCP" description="Settings for NATUS.EEG.ORM.NATUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORM.NATUS.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORM.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORM.TCP" description="Settings for NATUS.EEG.ORM.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORM.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORM.XPLORE.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORM.XPLORE.TCP" description="Settings for NATUS.EEG.ORM.XPLORE.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORM.XPLORE.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORU.FILE.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORU.FILE" description="Settings for NATUS.EEG.ORU.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORU.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\NATUS_EEG_ORU.files\</Setting><Setting Target="Host" Name="TargetConfigNames">NATUS.EEG.ORU.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORU.NATUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORU.NATUS.TCP" description="Settings for NATUS.EEG.ORU.NATUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORU.NATUS.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">NATUS.EEG.ORU_Routeur,Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORU.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORU.TCP" description="Settings for NATUS.EEG.ORU.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORU.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EEG.ORU.VISUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EEG.ORU.VISUS.TCP" description="Settings for NATUS.EEG.ORU.VISUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EEG.ORU.VISUS.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORM.FILE.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORM.FILE" description="Settings for NATUS.EMG.ORM.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORM.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\NATUS_EMG_ORM.files\</Setting><Setting Target="Host" Name="TargetConfigNames">NATUS.EMG.ORM.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORM.NATUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORM.NATUS.TCP" description="Settings for NATUS.EMG.ORM.NATUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORM.NATUS.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORM.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORM.TCP" description="Settings for NATUS.EMG.ORM.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORM.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORM.XPLORE.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORM.XPLORE.TCP" description="Settings for NATUS.EMG.ORM.XPLORE.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORM.XPLORE.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORU.FILE.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORU.FILE" description="Settings for NATUS.EMG.ORU.FILE in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORU.FILE" Category="" ClassName="EnsLib.HL7.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="FilePath">E:\Interfaces\AHP_GED\NATUS_EMG_ORU.files\</Setting><Setting Target="Host" Name="TargetConfigNames">NATUS.EMG.ORU.TCP</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORU.NATUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORU.NATUS.TCP" description="Settings for NATUS.EMG.ORU.NATUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORU.NATUS.TCP" Category="" ClassName="EnsLib.HL7.Service.TCPService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Host" Name="TargetConfigNames">Cardio.CVi42.Natus_Router</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORU.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORU.TCP" description="Settings for NATUS.EMG.ORU.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORU.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document>
+
+<Document name="Settings:NATUS.EMG.ORU.VISUS.TCP.PTD"><ProjectTextDocument name="Settings:NATUS.EMG.ORU.VISUS.TCP" description="Settings for NATUS.EMG.ORU.VISUS.TCP in Production TESTPEDROPKG.FoundationProduction">
+<![CDATA[<Item Name="NATUS.EMG.ORU.VISUS.TCP" Category="" ClassName="EnsLib.HL7.Operation.TCPOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule=""><Setting Target="Adapter" Name="IPAddress">enstst03.ahp.local</Setting><Setting Target="Adapter" Name="Port">40000</Setting></Item>
+]]></ProjectTextDocument>
+</Document></Export>
